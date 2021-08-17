@@ -8,6 +8,8 @@
 ## Back-end
 
 - Spring 
+  - thymeleaf
+- Mysql
 
 ## Infra 
 
