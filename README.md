@@ -2,7 +2,7 @@
 
 ## Front-end
 
-- html, css
+- html, css, js
 - plugin : feather
 
 ## Back-end
