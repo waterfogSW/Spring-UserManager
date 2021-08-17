@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dash board</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./logo.svg" type="image/x-icon">
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+  <div class="layer"></div>
+  <!-- ! Body -->
+  <a class="skip-link sr-only" href="#skip-target">Skip to content</a>
+  <!-- ! Main -->
+  <main class="main users chart-page" id="skip-target">
+    <div class="container">
+      <h2 class="main-title" style="text-align: center;">Dashboard</h2>
+      <div class="row stat-cards">
+        <div class="col-md-6 col-xl-3">
+          <article class="stat-cards-item">
+            <div class="stat-cards-icon purple">
+              <i data-feather="user-plus" aria-hidden="true"></i>
+            </div>
+            <div class="stat-cards-info">
+              <a href="./upload.html">
+                <p class="stat-cards-info__title">Register User
+                </p>
+              </a>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-6 col-xl-3">
+          <article class="stat-cards-item">
+            <div class="stat-cards-icon warning">
+              <i data-feather="list" aria-hidden="true"></i>
+            </div>
+            <div class="stat-cards-info">
+              <a href="./raw-list.html">
+                <p class="stat-cards-info__title">Raw file list</p>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-9">
+          <div class="users-table table-wrapper">
+            <table class="posts-table">
+              <thead>
+                <tr class="users-table-info">
+                  <th>
+                    <label class="users-table__checkbox ms-20">
+                      <input type="checkbox" class="check-all">
+                    </label>
+                  </th>
+                  <th>Name</th>
+                  <th>Age</th>
+                  <th>Email</th>
+                  <th>Date</th>
+                  <th>Status</th>
+                  <th>Edit</th>
+                </tr>
+              </thead>
+              <!-- database user information -->
+              <tbody>
+                <tr>
+                  <td>
+                    <label class="users-table__checkbox">
+                      <input type="checkbox" class="check">
+                    </label>
+                  </td>
+                  <td>
+                    San Kim
+                  </td>
+                  <td>
+                    15
+                  </td>
+                  <td>waterfog9580@gmail.com</span></td>
+                  <td>2021-08-17</td>
+                  <td><span class="badge-active">Active</span></td>
+                  <td>
+                    <span class="p-relative">
+                      <button class="dropdown-btn transparent-btn" type="button" title="More info">
+                        <div class="sr-only">More info</div>
+                        <i data-feather="more-horizontal" aria-hidden="true"></i>
+                      </button>
+                      <ul class="users-item-dropdown dropdown">
+                        <li><a href="##">Edit</a></li>
+                        <li><a href="##">Quick edit</a></li>
+                        <li><a href="##">Trash</a></li>
+                      </ul>
+                    </span>
+                  </td>
+                </tr>
+              </tbody>
+              <!-- database user information -->
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- ! Footer -->
+  <footer class="footer">
+    <div class="container footer--flex">
+      <div class="footer-start">
+        <p>2021 © San's Video Dashboard - <a href="https://waterfogSW.github.io" target="_blank"
+            rel="noopener noreferrer">waterfogSW.github.io</a></p>
+      </div>
+    </div>
+  </footer>
+  </div>
+  </div>
+  <!-- Icons library -->
+  <script src="plugins/feather.min.js"></script>
+  <!-- Custom scripts -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
