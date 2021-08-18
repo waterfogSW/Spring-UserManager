@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Upload</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./logo.svg" type="image/x-icon">
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+    <div class="layer"></div>
+    <main class="page-center">
+        <article class="sign-up">
+            <h1 class="sign-up__title">Upload User Information</h1>
+            <p class="sign-up__subtitle">Enter the user information</p>
+            <form class="sign-up-form form" action="/users/upload" method="post">
+                <label class="form-label-wrapper">
+          <p class="form-label">Name</p>
+          <input class="form-input" type="text" placeholder="Enter the Name of user" required>
+        </label>
+                <label class="form-label-wrapper">
+          <p class="form-label">Age</p>
+          <input class="form-input" type="number" placeholder="Enter the Age of user" required>
+        </label>
+                <label class="form-label-wrapper">
+          <p class="form-label">Email Address</p>
+          <input class="form-input" type="email" placeholder="Enter the Email of user" required>
+        </label>
+                <button class="form-btn primary-default-btn transparent-btn">Register</button>
+            </form>
+        </article>
+    </main>
+    <!-- Custom scripts -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

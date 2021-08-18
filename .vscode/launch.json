@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-UserManagerApplication<user_manager>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "waterfogsw.user_manager.UserManagerApplication",
+            "projectName": "user_manager",
+            "args": ""
+        }
+    ]
+}

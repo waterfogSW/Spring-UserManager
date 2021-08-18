@@ -6,8 +6,11 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
+import org.springframework.stereotype.Repository;
+
 import waterfogsw.user_manager.domain.User;
 
+@Repository
 public class MemoryUserRepository implements UserRepository {
     private static Map<Long, User> store = new HashMap<>();
     private static long sequence = 0L;
