@@ -1,11 +1,10 @@
 package waterfogsw.user_manager.domain;
 
-import java.sql.Date;
+import java.util.Date;
 
 public class User {
     private Long id;
     private Date date;
-
     private String name;
     private Long age;
     private String email;

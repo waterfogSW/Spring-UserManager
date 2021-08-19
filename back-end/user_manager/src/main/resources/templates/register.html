@@ -18,20 +18,20 @@
         <article class="sign-up">
             <h1 class="sign-up__title">Upload User Information</h1>
             <p class="sign-up__subtitle">Enter the user information</p>
-            <form class="sign-up-form form" action="/users/upload" method="post">
+            <form class="sign-up-form form" action="/register/upload" method="post">
                 <label class="form-label-wrapper">
-          <p class="form-label">Name</p>
-          <input class="form-input" type="text" placeholder="Enter the Name of user" required>
-        </label>
+                    <p class="form-label">Name</p>
+                    <input class="form-input" id="name" name="name" type="text" placeholder="Enter the Name of user" required>
+                </label>
                 <label class="form-label-wrapper">
-          <p class="form-label">Age</p>
-          <input class="form-input" type="number" placeholder="Enter the Age of user" required>
-        </label>
+                    <p class="form-label">Age</p>
+                    <input class="form-input" id="age" name="age" type="number" placeholder="Enter the Age of user" required>
+                </label>
                 <label class="form-label-wrapper">
-          <p class="form-label">Email Address</p>
-          <input class="form-input" type="email" placeholder="Enter the Email of user" required>
-        </label>
-                <button class="form-btn primary-default-btn transparent-btn">Register</button>
+                    <p class="form-label">Email Address</p>
+                    <input class="form-input" id="email" name="email" stype="email" placeholder="Enter the Email of user" required>
+                </label>
+                <button class="form-btn primary-default-btn transparent-btn" type="submit">Register</button>
             </form>
         </article>
     </main>

@@ -1,10 +1,6 @@
 package waterfogsw.user_manager.repository;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
+import java.util.*;
 
 import org.springframework.stereotype.Repository;
 
@@ -17,7 +13,9 @@ public class MemoryUserRepository implements UserRepository {
 
     @Override
     public User save(User user) {
+        Date date = new Date();
         user.setId(++sequence);
+        user.setDate(date);
         store.put(user.getId(), user);
         return user;
     }

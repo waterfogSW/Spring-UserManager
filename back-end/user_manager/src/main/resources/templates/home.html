@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 
 <head>
     <meta charset="UTF-8">
@@ -40,7 +40,7 @@
                             <i data-feather="list" aria-hidden="true"></i>
                         </div>
                         <div class="stat-cards-info">
-                            <a href="./list">
+                            <a href="./users">
                                 <p class="stat-cards-info__title">Raw file list</p>
                             </a>
                         </div>
@@ -68,7 +68,7 @@
                             </thead>
                             <!-- database user information -->
                             <tbody>
-                                <tr>
+                                <tr th:each="user : ${users}">
                                     <td>
                                         <label class="users-table__checkbox">
                                             <input type="checkbox" class="check">
@@ -99,8 +99,8 @@
                                         </span>
                                     </td>
                                 </tr>
+                                <!-- database user information -->
                             </tbody>
-                            <!-- database user information -->
                         </table>
                     </div>
                 </div>
